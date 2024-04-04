@@ -1,0 +1,12 @@
+source https://red-gate.pkgs.visualstudio.com/_packaging/Main/nuget/v3/index.json
+# renovate: registryUrl=https://myprivaterepo.example.com/Main/nuget/v3/index.json
+nuget MyPrivatePackage == 7.28.495
+source https://api.nuget.org/v3/index.json
+nuget Invoke-Build == 5.11.0
+
+group GuiTests
+  source https://red-gate.pkgs.visualstudio.com/_packaging/Main/nuget/v3/index.json
+  # renovate: registryUrl=https://myprivaterepo.example.com/Main/nuget/v3/index.json
+  nuget MyPrivatePackageInGroup ~> 5
+  source https://api.nuget.org/v3/index.json
+  nuget Pester == 5.5.0
