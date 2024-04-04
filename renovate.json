@@ -11,4 +11,15 @@
       "https://myprivaterepo.example.com/Main/nuget/v3/index.json"
     ]
   },
+  "regexManagers": [
+    {
+      "fileMatch":["(^|/)paket.dependencies$"],
+      "matchStrings":[
+        "(registryUrl=(?<registryUrl>.*?)\\s)?nuget (?<depName>\\S+>?) == (?<currentValue>.*?)\\s",
+        "(registryUrl=(?<registryUrl>.*?)\\s)?nuget (?<depName>\\S+\\.exe>?) (?<currentValue>.*?)\\s"
+      ],
+      "versioningTemplate":"nuget",
+      "datasourceTemplate":"nuget"
+    }
+  ]
 }
