@@ -15,8 +15,7 @@
     {
       "fileMatch":["(^|/)paket.dependencies$"],
       "matchStrings":[
-        "(registryUrl=(?<registryUrl>.*?)\\s)?nuget (?<depName>\\S+>?) == (?<currentValue>.*?)\\s",
-        "(registryUrl=(?<registryUrl>.*?)\\s)?nuget (?<depName>\\S+\\.exe>?) (?<currentValue>.*?)\\s"
+        "(registryUrl=(?<registryUrl>.*?)\\s)?nuget (?<depName>\\S+>?) +(== +)?(?<currentValue>.*?)\\s"
       ],
       "versioningTemplate":"nuget",
       "datasourceTemplate":"nuget"
