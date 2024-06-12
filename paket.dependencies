@@ -2,7 +2,7 @@ source https://myprivaterepo.example.com/Main/nuget/v3/index.json
 # renovate: registryUrl=https://myprivaterepo.example.com/Main/nuget/v3/index.json
 nuget MyPrivatePackage == 7.28.495
 source https://api.nuget.org/v3/index.json
-nuget Invoke-Build == 5.11.0
+nuget Invoke-Build == 5.11.2
 
 group GuiTests
   source https://myprivaterepo.example.com/Main/nuget/v3/index.json
